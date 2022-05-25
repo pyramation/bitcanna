@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`messages 1`] = `
+Object {
+  "typeUrl": "/BitCannaGlobal.bcna.bcna.MsgCreateBitcannaid",
+  "value": Object {
+    "address": "osmo1f4vxvvvvvvvvvv3luuddddddddddcccccccccc",
+    "bcnaid": "myid",
+    "creator": "creator",
+  },
+}
+`;
