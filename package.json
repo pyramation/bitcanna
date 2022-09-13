@@ -23,7 +23,7 @@
     "build": "npm run build:module && npm run build:main",
     "build:ts": "tsc --project ./tsconfig.json",
     "buidl": "npm run build && npm run build:ts",
-    "proto": "cross-env NODE_ENV=development babel-node scripts/gen-proto.js",
+    "codegen": "cross-env NODE_ENV=development babel-node scripts/codegen.js",
     "prepublish": "npm run build",
     "dev": "cross-env NODE_ENV=development babel-node src/index --extensions \".tsx,.ts,.js\"",
     "watch": "cross-env NODE_ENV=development babel-watch src/index --extensions \".tsx,.ts,.js\"",
@@ -75,13 +75,13 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
-    "@cosmjs/amino": "0.28.4",
-    "@cosmjs/proto-signing": "0.28.4",
-    "@cosmjs/stargate": "0.28.4",
-    "@cosmjs/tendermint-rpc": "^0.28.0",
-    "@osmonauts/helpers": "^0.3.2",
-    "@osmonauts/lcd": "^0.3.4",
-    "@osmonauts/telescope": "^0.4.33",
+    "@cosmjs/amino": "0.28.13",
+    "@cosmjs/proto-signing": "0.28.13",
+    "@cosmjs/stargate": "0.28.13",
+    "@cosmjs/tendermint-rpc": "^0.28.13",
+    "@osmonauts/helpers": "^0.4.3",
+    "@osmonauts/lcd": "^0.4.0",
+    "@osmonauts/telescope": "^0.19.0",
     "protobufjs": "^6.11.2"
   }
 }
