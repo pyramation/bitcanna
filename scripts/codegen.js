@@ -19,7 +19,14 @@ telescope({
       }
     },
     aminoEncoding: {
-      enabled: true
+      enabled: true,
+      typeUrlToAmino: (typeUrl) => {
+        if (typeUrl.startsWith('BitCannaGlobal')) {
+          const parts = typeUrl.split('.');
+          parts[0] = parts[0].toLowerCase();
+          return parts.join('.');
+        }
+      }
     },
     lcdClients: {
       enabled: true
